@@ -1,0 +1,988 @@
+<?php /* Template name: Admin Internal */ ?>
+<?php get_header(); ?>
+    <?php   if(!is_user_logged_in()): 
+                wp_redirect(site_url());
+                exit;
+            endif;
+            var_dump(wp_get_current_user());
+    ?>
+    <div class="internal">
+        <div class="section1">
+            <div class="size-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/internal.png" class="img-fluid" alt="">
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-page">
+                                <span>NỘI BỘ HITEKO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-inline text-center tab-title">
+                            <li class="list-inline-item active" data-show-id="1" id='tab-internal-1'>LESSION LEARN</li>
+                            <li class="list-inline-item" data-show-id="2" id='tab-internal-2'>DAILY TO DO LIST</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 tab-content show-content" id='content-1'>
+                        <div class="details-project">
+                            Dự Án KDC TDC BÌNH KHÁNH - R7
+                            <div class="update">
+                                <span>
+                                    Cập Nhật
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="close">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/goTop.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="heading">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="date">
+                                                Ngày:
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address">
+                                                KDC TDC BÌNH KHÁNH - R7
+                                                Địa chỉ: Bình Khánh, Q.2, TP.HCM
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <div class="learn">
+                                                BÀI HỌC KINH NGHIỆM <br> LESSION LEARN
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <table class="table  my-table">
+                                        <thead>
+                                            <tr>
+                                                <th><span>STT</span> <br> No</th>
+                                                <th><span>CÔNG TÁC THỰC HIỆN</span> <br>
+                                                    Description
+                                                </th>
+                                                <th>
+                                                    <span>ĐÃ THỰC HIỆn</span><br>
+                                                    Actually
+                                                </th>
+                                                <th>
+                                                    <span>CÁCH NÊN XỬ LÝ</span><br>
+                                                    Solution
+                                                </th>
+                                                <th>
+                                                    <span>BÀI HỌC RÚT RA SAU KHI XỬ LÝ</span><br>
+                                                    Lesson learn
+                                                </th>
+                                                <th>
+                                                    <span>GHI CHÚ</span> <br>
+                                                    Remarks
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="utm-b text-center">A</td>
+                                                <td colspan="5" class="utm-b">
+                                                    THIẾT KẾ & CHỌN VẬT LIỆU / DESIGN & MATERIAL SELECTION
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">01</td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công ban đầu
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Thiết kế chưa hoàn thiện đã tiến hành thi công
+                                                    Design is not yet finished before construction
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Câp nhật bảng những việc ảnh hưởng đến tiến độ.<br>
+                                                    - Viết thư gửi CĐT để thúc đẩy và hổ trợ chi phí.<br>
+                                                    - Record and update to "works affecting project schedule"<br>
+                                                    - Issue latters and send to the Owner in order to get supporting from them (push designer, approve VO)<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Ảnh hưởng tiến độ dự án, một số hạng mục phải chờ thiết kế mới phát hành mới thi công được.<br>
+                                                    - Gây khó khăn trong công tác quản lý hồ sơ thiết kế khi mà bản vẽ thiết kế liên tục cập nhật, tăng chi phí quản lí.<br>
+                                                    - Gây chi phí phát sinh , ví dụ: hệ thống ponding cho các nhà trong thiết kế không có.<br>
+                                                    - Chất lượng của dự án vì các hạng mục không có sự liên tục.<br>
+                                                    - Affecting to project schedule, some buildings put in hold and wait for updating of design.<br>
+                                                    - Affecting to management of design documentation and cause managment cost.<br>
+                                                    - Affecting quality of project because some buildings can not execute continously.<br>
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">
+                                                    02
+                                                </td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Tư vấn thiết kế phát hành SI bổ sung sửa đổi thiết kế thường xuyên thậm chí không phát hành SI. Vì quá mất thời gian ảnh hưởng đến tiến độ thi công nên TVN đã tiến hành làm đến đâu thấy mâu thuẫn thì sửa đến đó.
+                                                    Tuy nhiên cho đến giờ này vẫn còn rất nhiều mâu thuẫn đang chờ TVN xử lý VD: hệ thống ME tại vị trí cổng phụ, Hố ga nước thải S27 nằm ngay trên đường, Cao độ nền đường nội bộ thấp hơn đường khu công nghiệp gần 1m...
+                                                    Design consultant loses control of designing. They ussally issued Site Instruction to remedy their design conflicts. However, there are many remainning issues that can not be solved easily, for examble : ME system at subgate; manhole laying on main road; level of internal road is lower 1 metter comparing with the insdutrial park road.
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Lưu trữ thật kỹ các bằng chứng để sau này làm việc với chủ đầu tư.<br>
+                                                    - Phát hành thư thúc đẩy và nhắc nhở.<br>
+                                                    - Cùng ngồi với bên A để đẩy nhanh.<br>
+                                                    - Record all envidences to show the owner in necessary case .<br>
+                                                    -Issue latter to the consultant to remind them.<br>
+                                                    - Disscuss with the Owner regularly to find the solution.<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Khó khăn trong triển khai thi công. Dẫn đến chồng chéo trong quá trình thi công: cái cần làm trước thì TVN ra SI hoặc bản vẽ sau, cái làm sau thì TVN phát hành SI hoặc bản vẽ trước. Bị động hoàn toàn<br>
+                                                    -Affecting to work implementation. there are many conflicts of design but the consultant is slow in feedback and solving problems.
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">
+                                                    03
+                                                </td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Tư vấn thiết kế phát hành SI bổ sung sửa đổi thiết kế thường xuyên thậm chí không phát hành SI. Vì quá mất thời gian ảnh hưởng đến tiến độ thi công nên TVN đã tiến hành làm đến đâu thấy mâu thuẫn thì sửa đến đó.
+                                                    Tuy nhiên cho đến giờ này vẫn còn rất nhiều mâu thuẫn đang chờ TVN xử lý VD: hệ thống ME tại vị trí cổng phụ, Hố ga nước thải S27 nằm ngay trên đường, Cao độ nền đường nội bộ thấp hơn đường khu công nghiệp gần 1m...
+                                                    Design consultant loses control of designing. They ussally issued Site Instruction to remedy their design conflicts. However, there are many remainning issues that can not be solved easily, for examble : ME system at subgate; manhole laying on main road; level of internal road is lower 1 metter comparing with the insdutrial park road.
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Lưu trữ thật kỹ các bằng chứng để sau này làm việc với chủ đầu tư.<br>
+                                                    - Phát hành thư thúc đẩy và nhắc nhở.<br>
+                                                    - Cùng ngồi với bên A để đẩy nhanh.<br>
+                                                    - Record all envidences to show the owner in necessary case .<br>
+                                                    -Issue latter to the consultant to remind them.<br>
+                                                    - Disscuss with the Owner regularly to find the solution.<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Khó khăn trong triển khai thi công. Dẫn đến chồng chéo trong quá trình thi công: cái cần làm trước thì TVN ra SI hoặc bản vẽ sau, cái làm sau thì TVN phát hành SI hoặc bản vẽ trước. Bị động hoàn toàn<br>
+                                                    -Affecting to work implementation. there are many conflicts of design but the consultant is slow in feedback and solving problems.
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-project">
+                            Dự Án KDC TDC BÌNH KHÁNH - R7
+                            <div class="update">
+                                <span>
+                                    Cập Nhật
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="close">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/goTop.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="heading">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="date">
+                                                Ngày:
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address">
+                                                KDC TDC BÌNH KHÁNH - R7
+                                                Địa chỉ: Bình Khánh, Q.2, TP.HCM
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <div class="learn">
+                                                BÀI HỌC KINH NGHIỆM <br> LESSION LEARN
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <table class="table  my-table">
+                                        <thead>
+                                            <tr>
+                                                <th><span>STT</span> <br> No</th>
+                                                <th><span>CÔNG TÁC THỰC HIỆN</span> <br>
+                                                    Description
+                                                </th>
+                                                <th>
+                                                    <span>ĐÃ THỰC HIỆn</span><br>
+                                                    Actually
+                                                </th>
+                                                <th>
+                                                    <span>CÁCH NÊN XỬ LÝ</span><br>
+                                                    Solution
+                                                </th>
+                                                <th>
+                                                    <span>BÀI HỌC RÚT RA SAU KHI XỬ LÝ</span><br>
+                                                    Lesson learn
+                                                </th>
+                                                <th>
+                                                    <span>GHI CHÚ</span> <br>
+                                                    Remarks
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="utm-b text-center">A</td>
+                                                <td colspan="5" class="utm-b">
+                                                    THIẾT KẾ & CHỌN VẬT LIỆU / DESIGN & MATERIAL SELECTION
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">01</td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công ban đầu
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Thiết kế chưa hoàn thiện đã tiến hành thi công
+                                                    Design is not yet finished before construction
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Câp nhật bảng những việc ảnh hưởng đến tiến độ.<br>
+                                                    - Viết thư gửi CĐT để thúc đẩy và hổ trợ chi phí.<br>
+                                                    - Record and update to "works affecting project schedule"<br>
+                                                    - Issue latters and send to the Owner in order to get supporting from them (push designer, approve VO)<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Ảnh hưởng tiến độ dự án, một số hạng mục phải chờ thiết kế mới phát hành mới thi công được.<br>
+                                                    - Gây khó khăn trong công tác quản lý hồ sơ thiết kế khi mà bản vẽ thiết kế liên tục cập nhật, tăng chi phí quản lí.<br>
+                                                    - Gây chi phí phát sinh , ví dụ: hệ thống ponding cho các nhà trong thiết kế không có.<br>
+                                                    - Chất lượng của dự án vì các hạng mục không có sự liên tục.<br>
+                                                    - Affecting to project schedule, some buildings put in hold and wait for updating of design.<br>
+                                                    - Affecting to management of design documentation and cause managment cost.<br>
+                                                    - Affecting quality of project because some buildings can not execute continously.<br>
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">
+                                                    02
+                                                </td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Tư vấn thiết kế phát hành SI bổ sung sửa đổi thiết kế thường xuyên thậm chí không phát hành SI. Vì quá mất thời gian ảnh hưởng đến tiến độ thi công nên TVN đã tiến hành làm đến đâu thấy mâu thuẫn thì sửa đến đó.
+                                                    Tuy nhiên cho đến giờ này vẫn còn rất nhiều mâu thuẫn đang chờ TVN xử lý VD: hệ thống ME tại vị trí cổng phụ, Hố ga nước thải S27 nằm ngay trên đường, Cao độ nền đường nội bộ thấp hơn đường khu công nghiệp gần 1m...
+                                                    Design consultant loses control of designing. They ussally issued Site Instruction to remedy their design conflicts. However, there are many remainning issues that can not be solved easily, for examble : ME system at subgate; manhole laying on main road; level of internal road is lower 1 metter comparing with the insdutrial park road.
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Lưu trữ thật kỹ các bằng chứng để sau này làm việc với chủ đầu tư.<br>
+                                                    - Phát hành thư thúc đẩy và nhắc nhở.<br>
+                                                    - Cùng ngồi với bên A để đẩy nhanh.<br>
+                                                    - Record all envidences to show the owner in necessary case .<br>
+                                                    -Issue latter to the consultant to remind them.<br>
+                                                    - Disscuss with the Owner regularly to find the solution.<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Khó khăn trong triển khai thi công. Dẫn đến chồng chéo trong quá trình thi công: cái cần làm trước thì TVN ra SI hoặc bản vẽ sau, cái làm sau thì TVN phát hành SI hoặc bản vẽ trước. Bị động hoàn toàn<br>
+                                                    -Affecting to work implementation. there are many conflicts of design but the consultant is slow in feedback and solving problems.
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">
+                                                    03
+                                                </td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Tư vấn thiết kế phát hành SI bổ sung sửa đổi thiết kế thường xuyên thậm chí không phát hành SI. Vì quá mất thời gian ảnh hưởng đến tiến độ thi công nên TVN đã tiến hành làm đến đâu thấy mâu thuẫn thì sửa đến đó.
+                                                    Tuy nhiên cho đến giờ này vẫn còn rất nhiều mâu thuẫn đang chờ TVN xử lý VD: hệ thống ME tại vị trí cổng phụ, Hố ga nước thải S27 nằm ngay trên đường, Cao độ nền đường nội bộ thấp hơn đường khu công nghiệp gần 1m...
+                                                    Design consultant loses control of designing. They ussally issued Site Instruction to remedy their design conflicts. However, there are many remainning issues that can not be solved easily, for examble : ME system at subgate; manhole laying on main road; level of internal road is lower 1 metter comparing with the insdutrial park road.
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Lưu trữ thật kỹ các bằng chứng để sau này làm việc với chủ đầu tư.<br>
+                                                    - Phát hành thư thúc đẩy và nhắc nhở.<br>
+                                                    - Cùng ngồi với bên A để đẩy nhanh.<br>
+                                                    - Record all envidences to show the owner in necessary case .<br>
+                                                    -Issue latter to the consultant to remind them.<br>
+                                                    - Disscuss with the Owner regularly to find the solution.<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Khó khăn trong triển khai thi công. Dẫn đến chồng chéo trong quá trình thi công: cái cần làm trước thì TVN ra SI hoặc bản vẽ sau, cái làm sau thì TVN phát hành SI hoặc bản vẽ trước. Bị động hoàn toàn<br>
+                                                    -Affecting to work implementation. there are many conflicts of design but the consultant is slow in feedback and solving problems.
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-project">
+                            Dự Án KDC TDC BÌNH KHÁNH - R7
+                            <div class="update">
+                                <span>
+                                    Cập Nhật
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="close">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/goTop.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="heading">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="date">
+                                                Ngày:
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address">
+                                                KDC TDC BÌNH KHÁNH - R7
+                                                Địa chỉ: Bình Khánh, Q.2, TP.HCM
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <div class="learn">
+                                                BÀI HỌC KINH NGHIỆM <br> LESSION LEARN
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <table class="table  my-table">
+                                        <thead>
+                                            <tr>
+                                                <th><span>STT</span> <br> No</th>
+                                                <th><span>CÔNG TÁC THỰC HIỆN</span> <br>
+                                                    Description
+                                                </th>
+                                                <th>
+                                                    <span>ĐÃ THỰC HIỆn</span><br>
+                                                    Actually
+                                                </th>
+                                                <th>
+                                                    <span>CÁCH NÊN XỬ LÝ</span><br>
+                                                    Solution
+                                                </th>
+                                                <th>
+                                                    <span>BÀI HỌC RÚT RA SAU KHI XỬ LÝ</span><br>
+                                                    Lesson learn
+                                                </th>
+                                                <th>
+                                                    <span>GHI CHÚ</span> <br>
+                                                    Remarks
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="utm-b text-center">A</td>
+                                                <td colspan="5" class="utm-b">
+                                                    THIẾT KẾ & CHỌN VẬT LIỆU / DESIGN & MATERIAL SELECTION
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">01</td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công ban đầu
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Thiết kế chưa hoàn thiện đã tiến hành thi công
+                                                    Design is not yet finished before construction
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Câp nhật bảng những việc ảnh hưởng đến tiến độ.<br>
+                                                    - Viết thư gửi CĐT để thúc đẩy và hổ trợ chi phí.<br>
+                                                    - Record and update to "works affecting project schedule"<br>
+                                                    - Issue latters and send to the Owner in order to get supporting from them (push designer, approve VO)<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Ảnh hưởng tiến độ dự án, một số hạng mục phải chờ thiết kế mới phát hành mới thi công được.<br>
+                                                    - Gây khó khăn trong công tác quản lý hồ sơ thiết kế khi mà bản vẽ thiết kế liên tục cập nhật, tăng chi phí quản lí.<br>
+                                                    - Gây chi phí phát sinh , ví dụ: hệ thống ponding cho các nhà trong thiết kế không có.<br>
+                                                    - Chất lượng của dự án vì các hạng mục không có sự liên tục.<br>
+                                                    - Affecting to project schedule, some buildings put in hold and wait for updating of design.<br>
+                                                    - Affecting to management of design documentation and cause managment cost.<br>
+                                                    - Affecting quality of project because some buildings can not execute continously.<br>
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">
+                                                    02
+                                                </td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Tư vấn thiết kế phát hành SI bổ sung sửa đổi thiết kế thường xuyên thậm chí không phát hành SI. Vì quá mất thời gian ảnh hưởng đến tiến độ thi công nên TVN đã tiến hành làm đến đâu thấy mâu thuẫn thì sửa đến đó.
+                                                    Tuy nhiên cho đến giờ này vẫn còn rất nhiều mâu thuẫn đang chờ TVN xử lý VD: hệ thống ME tại vị trí cổng phụ, Hố ga nước thải S27 nằm ngay trên đường, Cao độ nền đường nội bộ thấp hơn đường khu công nghiệp gần 1m...
+                                                    Design consultant loses control of designing. They ussally issued Site Instruction to remedy their design conflicts. However, there are many remainning issues that can not be solved easily, for examble : ME system at subgate; manhole laying on main road; level of internal road is lower 1 metter comparing with the insdutrial park road.
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Lưu trữ thật kỹ các bằng chứng để sau này làm việc với chủ đầu tư.<br>
+                                                    - Phát hành thư thúc đẩy và nhắc nhở.<br>
+                                                    - Cùng ngồi với bên A để đẩy nhanh.<br>
+                                                    - Record all envidences to show the owner in necessary case .<br>
+                                                    -Issue latter to the consultant to remind them.<br>
+                                                    - Disscuss with the Owner regularly to find the solution.<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Khó khăn trong triển khai thi công. Dẫn đến chồng chéo trong quá trình thi công: cái cần làm trước thì TVN ra SI hoặc bản vẽ sau, cái làm sau thì TVN phát hành SI hoặc bản vẽ trước. Bị động hoàn toàn<br>
+                                                    -Affecting to work implementation. there are many conflicts of design but the consultant is slow in feedback and solving problems.
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">
+                                                    03
+                                                </td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Tư vấn thiết kế phát hành SI bổ sung sửa đổi thiết kế thường xuyên thậm chí không phát hành SI. Vì quá mất thời gian ảnh hưởng đến tiến độ thi công nên TVN đã tiến hành làm đến đâu thấy mâu thuẫn thì sửa đến đó.
+                                                    Tuy nhiên cho đến giờ này vẫn còn rất nhiều mâu thuẫn đang chờ TVN xử lý VD: hệ thống ME tại vị trí cổng phụ, Hố ga nước thải S27 nằm ngay trên đường, Cao độ nền đường nội bộ thấp hơn đường khu công nghiệp gần 1m...
+                                                    Design consultant loses control of designing. They ussally issued Site Instruction to remedy their design conflicts. However, there are many remainning issues that can not be solved easily, for examble : ME system at subgate; manhole laying on main road; level of internal road is lower 1 metter comparing with the insdutrial park road.
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Lưu trữ thật kỹ các bằng chứng để sau này làm việc với chủ đầu tư.<br>
+                                                    - Phát hành thư thúc đẩy và nhắc nhở.<br>
+                                                    - Cùng ngồi với bên A để đẩy nhanh.<br>
+                                                    - Record all envidences to show the owner in necessary case .<br>
+                                                    -Issue latter to the consultant to remind them.<br>
+                                                    - Disscuss with the Owner regularly to find the solution.<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Khó khăn trong triển khai thi công. Dẫn đến chồng chéo trong quá trình thi công: cái cần làm trước thì TVN ra SI hoặc bản vẽ sau, cái làm sau thì TVN phát hành SI hoặc bản vẽ trước. Bị động hoàn toàn<br>
+                                                    -Affecting to work implementation. there are many conflicts of design but the consultant is slow in feedback and solving problems.
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-project">
+                            Dự Án KDC TDC BÌNH KHÁNH - R7
+                            <div class="update">
+                                <span>
+                                    Cập Nhật
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="close">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/goTop.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="heading">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="date">
+                                                Ngày:
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address">
+                                                KDC TDC BÌNH KHÁNH - R7
+                                                Địa chỉ: Bình Khánh, Q.2, TP.HCM
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <div class="learn">
+                                                BÀI HỌC KINH NGHIỆM <br> LESSION LEARN
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <table class="table  my-table">
+                                        <thead>
+                                            <tr>
+                                                <th><span>STT</span> <br> No</th>
+                                                <th><span>CÔNG TÁC THỰC HIỆN</span> <br>
+                                                    Description
+                                                </th>
+                                                <th>
+                                                    <span>ĐÃ THỰC HIỆn</span><br>
+                                                    Actually
+                                                </th>
+                                                <th>
+                                                    <span>CÁCH NÊN XỬ LÝ</span><br>
+                                                    Solution
+                                                </th>
+                                                <th>
+                                                    <span>BÀI HỌC RÚT RA SAU KHI XỬ LÝ</span><br>
+                                                    Lesson learn
+                                                </th>
+                                                <th>
+                                                    <span>GHI CHÚ</span> <br>
+                                                    Remarks
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="utm-b text-center">A</td>
+                                                <td colspan="5" class="utm-b">
+                                                    THIẾT KẾ & CHỌN VẬT LIỆU / DESIGN & MATERIAL SELECTION
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">01</td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công ban đầu
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Thiết kế chưa hoàn thiện đã tiến hành thi công
+                                                    Design is not yet finished before construction
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Câp nhật bảng những việc ảnh hưởng đến tiến độ.<br>
+                                                    - Viết thư gửi CĐT để thúc đẩy và hổ trợ chi phí.<br>
+                                                    - Record and update to "works affecting project schedule"<br>
+                                                    - Issue latters and send to the Owner in order to get supporting from them (push designer, approve VO)<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Ảnh hưởng tiến độ dự án, một số hạng mục phải chờ thiết kế mới phát hành mới thi công được.<br>
+                                                    - Gây khó khăn trong công tác quản lý hồ sơ thiết kế khi mà bản vẽ thiết kế liên tục cập nhật, tăng chi phí quản lí.<br>
+                                                    - Gây chi phí phát sinh , ví dụ: hệ thống ponding cho các nhà trong thiết kế không có.<br>
+                                                    - Chất lượng của dự án vì các hạng mục không có sự liên tục.<br>
+                                                    - Affecting to project schedule, some buildings put in hold and wait for updating of design.<br>
+                                                    - Affecting to management of design documentation and cause managment cost.<br>
+                                                    - Affecting quality of project because some buildings can not execute continously.<br>
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">
+                                                    02
+                                                </td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Tư vấn thiết kế phát hành SI bổ sung sửa đổi thiết kế thường xuyên thậm chí không phát hành SI. Vì quá mất thời gian ảnh hưởng đến tiến độ thi công nên TVN đã tiến hành làm đến đâu thấy mâu thuẫn thì sửa đến đó.
+                                                    Tuy nhiên cho đến giờ này vẫn còn rất nhiều mâu thuẫn đang chờ TVN xử lý VD: hệ thống ME tại vị trí cổng phụ, Hố ga nước thải S27 nằm ngay trên đường, Cao độ nền đường nội bộ thấp hơn đường khu công nghiệp gần 1m...
+                                                    Design consultant loses control of designing. They ussally issued Site Instruction to remedy their design conflicts. However, there are many remainning issues that can not be solved easily, for examble : ME system at subgate; manhole laying on main road; level of internal road is lower 1 metter comparing with the insdutrial park road.
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Lưu trữ thật kỹ các bằng chứng để sau này làm việc với chủ đầu tư.<br>
+                                                    - Phát hành thư thúc đẩy và nhắc nhở.<br>
+                                                    - Cùng ngồi với bên A để đẩy nhanh.<br>
+                                                    - Record all envidences to show the owner in necessary case .<br>
+                                                    -Issue latter to the consultant to remind them.<br>
+                                                    - Disscuss with the Owner regularly to find the solution.<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Khó khăn trong triển khai thi công. Dẫn đến chồng chéo trong quá trình thi công: cái cần làm trước thì TVN ra SI hoặc bản vẽ sau, cái làm sau thì TVN phát hành SI hoặc bản vẽ trước. Bị động hoàn toàn<br>
+                                                    -Affecting to work implementation. there are many conflicts of design but the consultant is slow in feedback and solving problems.
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">
+                                                    03
+                                                </td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Tư vấn thiết kế phát hành SI bổ sung sửa đổi thiết kế thường xuyên thậm chí không phát hành SI. Vì quá mất thời gian ảnh hưởng đến tiến độ thi công nên TVN đã tiến hành làm đến đâu thấy mâu thuẫn thì sửa đến đó.
+                                                    Tuy nhiên cho đến giờ này vẫn còn rất nhiều mâu thuẫn đang chờ TVN xử lý VD: hệ thống ME tại vị trí cổng phụ, Hố ga nước thải S27 nằm ngay trên đường, Cao độ nền đường nội bộ thấp hơn đường khu công nghiệp gần 1m...
+                                                    Design consultant loses control of designing. They ussally issued Site Instruction to remedy their design conflicts. However, there are many remainning issues that can not be solved easily, for examble : ME system at subgate; manhole laying on main road; level of internal road is lower 1 metter comparing with the insdutrial park road.
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Lưu trữ thật kỹ các bằng chứng để sau này làm việc với chủ đầu tư.<br>
+                                                    - Phát hành thư thúc đẩy và nhắc nhở.<br>
+                                                    - Cùng ngồi với bên A để đẩy nhanh.<br>
+                                                    - Record all envidences to show the owner in necessary case .<br>
+                                                    -Issue latter to the consultant to remind them.<br>
+                                                    - Disscuss with the Owner regularly to find the solution.<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Khó khăn trong triển khai thi công. Dẫn đến chồng chéo trong quá trình thi công: cái cần làm trước thì TVN ra SI hoặc bản vẽ sau, cái làm sau thì TVN phát hành SI hoặc bản vẽ trước. Bị động hoàn toàn<br>
+                                                    -Affecting to work implementation. there are many conflicts of design but the consultant is slow in feedback and solving problems.
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-project">
+                            Dự Án KDC TDC BÌNH KHÁNH - R7
+                            <div class="update">
+                                <span>
+                                    Cập Nhật
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="close">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/goTop.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="heading">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="date">
+                                                Ngày:
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="address">
+                                                KDC TDC BÌNH KHÁNH - R7
+                                                Địa chỉ: Bình Khánh, Q.2, TP.HCM
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <div class="learn">
+                                                BÀI HỌC KINH NGHIỆM <br> LESSION LEARN
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <table class="table  my-table">
+                                        <thead>
+                                            <tr>
+                                                <th><span>STT</span> <br> No</th>
+                                                <th><span>CÔNG TÁC THỰC HIỆN</span> <br>
+                                                    Description
+                                                </th>
+                                                <th>
+                                                    <span>ĐÃ THỰC HIỆn</span><br>
+                                                    Actually
+                                                </th>
+                                                <th>
+                                                    <span>CÁCH NÊN XỬ LÝ</span><br>
+                                                    Solution
+                                                </th>
+                                                <th>
+                                                    <span>BÀI HỌC RÚT RA SAU KHI XỬ LÝ</span><br>
+                                                    Lesson learn
+                                                </th>
+                                                <th>
+                                                    <span>GHI CHÚ</span> <br>
+                                                    Remarks
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="utm-b text-center">A</td>
+                                                <td colspan="5" class="utm-b">
+                                                    THIẾT KẾ & CHỌN VẬT LIỆU / DESIGN & MATERIAL SELECTION
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">01</td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công ban đầu
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Thiết kế chưa hoàn thiện đã tiến hành thi công
+                                                    Design is not yet finished before construction
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Câp nhật bảng những việc ảnh hưởng đến tiến độ.<br>
+                                                    - Viết thư gửi CĐT để thúc đẩy và hổ trợ chi phí.<br>
+                                                    - Record and update to "works affecting project schedule"<br>
+                                                    - Issue latters and send to the Owner in order to get supporting from them (push designer, approve VO)<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Ảnh hưởng tiến độ dự án, một số hạng mục phải chờ thiết kế mới phát hành mới thi công được.<br>
+                                                    - Gây khó khăn trong công tác quản lý hồ sơ thiết kế khi mà bản vẽ thiết kế liên tục cập nhật, tăng chi phí quản lí.<br>
+                                                    - Gây chi phí phát sinh , ví dụ: hệ thống ponding cho các nhà trong thiết kế không có.<br>
+                                                    - Chất lượng của dự án vì các hạng mục không có sự liên tục.<br>
+                                                    - Affecting to project schedule, some buildings put in hold and wait for updating of design.<br>
+                                                    - Affecting to management of design documentation and cause managment cost.<br>
+                                                    - Affecting quality of project because some buildings can not execute continously.<br>
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">
+                                                    02
+                                                </td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Tư vấn thiết kế phát hành SI bổ sung sửa đổi thiết kế thường xuyên thậm chí không phát hành SI. Vì quá mất thời gian ảnh hưởng đến tiến độ thi công nên TVN đã tiến hành làm đến đâu thấy mâu thuẫn thì sửa đến đó.
+                                                    Tuy nhiên cho đến giờ này vẫn còn rất nhiều mâu thuẫn đang chờ TVN xử lý VD: hệ thống ME tại vị trí cổng phụ, Hố ga nước thải S27 nằm ngay trên đường, Cao độ nền đường nội bộ thấp hơn đường khu công nghiệp gần 1m...
+                                                    Design consultant loses control of designing. They ussally issued Site Instruction to remedy their design conflicts. However, there are many remainning issues that can not be solved easily, for examble : ME system at subgate; manhole laying on main road; level of internal road is lower 1 metter comparing with the insdutrial park road.
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Lưu trữ thật kỹ các bằng chứng để sau này làm việc với chủ đầu tư.<br>
+                                                    - Phát hành thư thúc đẩy và nhắc nhở.<br>
+                                                    - Cùng ngồi với bên A để đẩy nhanh.<br>
+                                                    - Record all envidences to show the owner in necessary case .<br>
+                                                    -Issue latter to the consultant to remind them.<br>
+                                                    - Disscuss with the Owner regularly to find the solution.<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Khó khăn trong triển khai thi công. Dẫn đến chồng chéo trong quá trình thi công: cái cần làm trước thì TVN ra SI hoặc bản vẽ sau, cái làm sau thì TVN phát hành SI hoặc bản vẽ trước. Bị động hoàn toàn<br>
+                                                    -Affecting to work implementation. there are many conflicts of design but the consultant is slow in feedback and solving problems.
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center utm-rg">
+                                                    03
+                                                </td>
+                                                <td class="utm-rg">
+                                                    Thiết kế thi công
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    Tư vấn thiết kế phát hành SI bổ sung sửa đổi thiết kế thường xuyên thậm chí không phát hành SI. Vì quá mất thời gian ảnh hưởng đến tiến độ thi công nên TVN đã tiến hành làm đến đâu thấy mâu thuẫn thì sửa đến đó.
+                                                    Tuy nhiên cho đến giờ này vẫn còn rất nhiều mâu thuẫn đang chờ TVN xử lý VD: hệ thống ME tại vị trí cổng phụ, Hố ga nước thải S27 nằm ngay trên đường, Cao độ nền đường nội bộ thấp hơn đường khu công nghiệp gần 1m...
+                                                    Design consultant loses control of designing. They ussally issued Site Instruction to remedy their design conflicts. However, there are many remainning issues that can not be solved easily, for examble : ME system at subgate; manhole laying on main road; level of internal road is lower 1 metter comparing with the insdutrial park road.
+                                                </td>
+                                                <td class="utm-i text-justify">
+                                                    - Lưu trữ thật kỹ các bằng chứng để sau này làm việc với chủ đầu tư.<br>
+                                                    - Phát hành thư thúc đẩy và nhắc nhở.<br>
+                                                    - Cùng ngồi với bên A để đẩy nhanh.<br>
+                                                    - Record all envidences to show the owner in necessary case .<br>
+                                                    -Issue latter to the consultant to remind them.<br>
+                                                    - Disscuss with the Owner regularly to find the solution.<br>
+                                                </td>
+                                                <td class="utm-rg text-justify">
+                                                    - Khó khăn trong triển khai thi công. Dẫn đến chồng chéo trong quá trình thi công: cái cần làm trước thì TVN ra SI hoặc bản vẽ sau, cái làm sau thì TVN phát hành SI hoặc bản vẽ trước. Bị động hoàn toàn<br>
+                                                    -Affecting to work implementation. there are many conflicts of design but the consultant is slow in feedback and solving problems.
+                                                </td>
+                                                <td class="utm-rg">
+                                                    -Chỉ mang tính tạm thời. Bị động<br>
+                                                    - The solution is temporary and passive.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 tab-content" id='content-2'>
+                        <?php $current_user = wp_get_current_user();?>
+                        <div class="employee-position">
+                            Ngày / Date: <span><?php echo date('d/m/Y') ?></span>
+                        </div>
+                        <div class="add">
+                            <a class="utm-b">Add</a>
+                        </div>
+                        <div class="todolist" id="todolist">
+                            <table class="table table-hover text-center daily-to-do-list">
+                                <thead>
+                                    <tr class="">
+                                        <th class="utm-b">STT<br><span class="utm-i">No.</span></th>
+                                        <th class="utm-b">NỘI DUNG CÔNG VIỆC <br><span class="utm-i">Task</span></th>
+                                        <th class="utm-b">NGÀY HOÀN THÀNH<br><span class="utm-i">Deadline</span></th>
+                                        <th class="utm-b">GHI CHÚ <br><span class="utm-i">Notes</span></th>
+                                        <th class="utm-b">HOÀN THÀNH <br><span class="utm-i">Check</span></th>
+                                        <th class="utm-b">HÀNH ĐỘNG <br><span class="utm-i">Action</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <?php     
+                                    $post = query_posts(array( 
+                                        'post_type' => 'daily_to_do_list',
+                                        'posts_per_page' => 10,
+                                            'meta_query' => array(
+                                                'relation'=> 'and',
+                                                array(
+                                                    'key'     => "name",
+                                                    'value'   => $current_user->ID
+                                                ),
+                                                array(
+                                                    'key'     => "check",
+                                                    'value'   => 100,
+                                                    'compare' => '!='
+                                                ),
+                                            ),
+                                    ));
+                                    $i = 1;
+                                ?>
+                                <?php while(have_posts()):the_post(); 
+                                    $user = get_userdata( get_field('name')); 
+                                ?>
+                                    <tr>
+                                        <td><?php echo $i ?></td>
+                                        <td><?php the_title(); ?></td>
+                                        <td><?php the_field('date') ?></td>
+                                        <td><?php the_field('notes') ?></td>
+                                        <td class="d-md-flex flex-md-row justify-content-center  ">
+                                            
+                                            <span><a class="quality"><?php the_field('check') ?></a>%</span>
+                                            
+                                        </td>
+                                        <td>
+                                            <div class="edit d-inline-block" data-id="<?php echo get_the_ID(); ?>">
+                                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="delete d-inline-block" data-delete-id="<?php echo get_the_ID(); ?>">
+                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <?php 
+                                    $i++ ;
+                                    endwhile;
+                                ?>                                
+                                </tbody>
+                            </table>
+                            <div class="page-nav">
+                                <?php wp_pagenavi(); ?>
+                            </div>
+                            <?php wp_reset_query(); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addmodal">
+        <div class="modal-dialog modal-lg d-flex flex-column justify-content-center">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header ">
+                    <h4 class="modal-title ml-auto mr-auto">ADD NEW TASK</h4>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input id="" type="text" class="form-control task" placeholder="Nội dung công việc (*)">
+                    </div>
+                    <div class="form-group d-flex flex-md-row flex-column">
+                        <input id="" class=" w-50 mr-md-3 form-control calendar date" placeholder="Ngày hoàn thành (*)">
+                        <input id="" class=" w-50 ml-md-3 form-control check percent" type="number" max=100  min=0  placeholder="Tiến độ hoàn thành (*)">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="" class="form-control notes notes" placeholder="Ghi chú"></textarea>
+                    </div>
+                    <div class="row mt-4">
+                        <?php wp_nonce_field('add_daily'); ?>
+                        <div class="col-6">
+                            
+                        </div>
+                        <div class="col-6 d-flex flex-row justify-content-end">
+                            <button  class="forgot-pw">Save</button>
+                            <button  class="btn-login">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editmodal">
+        <div class="modal-dialog modal-lg d-flex flex-column justify-content-center">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header ">
+                    <h4 class="modal-title ml-auto mr-auto">EDIT TASK</h4>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="hidden" value="" class="postid">
+                        <input id="" type="text" class="form-control task" placeholder="Nội dung công việc (*)">
+                    </div>
+                    <div class="form-group d-flex flex-md-row flex-column">
+                        <input id="" class=" w-50 mr-md-3 form-control calendar date" placeholder="Ngày hoàn thành (*)">
+                        <input id="" class=" w-50 ml-md-3 form-control check percent" type="number" max=100  min=0  placeholder="Tiến độ hoàn thành (*)">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="" class="form-control notes notes" placeholder="Ghi chú"></textarea>
+                    </div>
+                    <div class="row mt-4">
+                        <?php wp_nonce_field('edit_daily'); ?>
+                        <div class="col-6">
+                            
+                        </div>
+                        <div class="col-6 d-flex flex-row justify-content-end">
+                            <button  class="forgot-pw">Save</button>
+                            <button  class="btn-login">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="deletemodal">
+        <div class="modal-dialog modal-md d-flex flex-column justify-content-center">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header ">
+                    <h4 class="modal-title ml-auto mr-auto">DELETE TASK</h4>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 pb-md-3">
+                            <h5 class="text-center"> Bạn có muốn xóa nội dung này ? </h5>
+                        </div>
+                        <input class="postid" type="hidden" value="0">
+                        <?php wp_nonce_field('delete_daily'); ?>
+                        <div class="col-6 offset-md-3 pb-md-3">
+                            <button id="edit-task" class="forgot-pw form-control">Có</button>
+                        </div>
+                        <div class="col-6 offset-md-3 d-flex flex-row justify-content-end">
+                            <button id="delete-task" class="btn-login form-control">Không</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php get_footer(); ?>
